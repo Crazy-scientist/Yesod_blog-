@@ -1,1 +1,15 @@
+import Yesod 
+Import Yesod.Auth 
+import Yesod.Form.Nic(YesodNic,nicHtmlField)
+import Yesod.Auth,BrowserId(authBrowserId)
+import Data.Text 
+import Network.HTTP.Conduit 
+import Database.Persist.Sqlite 
+import Data.Time
+import Control.Applicative 
+
+
+share [mkPersist,sqlSetting,mkMigrate ]
+
+
 
